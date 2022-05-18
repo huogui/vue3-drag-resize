@@ -3,6 +3,6 @@
         "eslint --fix"
     ],
     "src/**/*.{vue,css,less,scss}": [
-        "stylelint --allow-empty-input --fix "
+        "stylelint --aei --fix "
     ]
 }
