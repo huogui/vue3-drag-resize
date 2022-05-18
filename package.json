@@ -6,7 +6,8 @@
     "build": "tsc && vue-tsc --noEmit && vite build",
     "prepare": "husky install",
     "eslint": "eslint src --ext .ts,.js,.vue --fix",
-    "lint": "npm run eslint"
+    "stylelint": "stylelint src/**/*.{vue,css,less,scss} --fix",
+    "lint": "npm run eslint && npm run stylelint"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
