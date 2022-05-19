@@ -12,9 +12,6 @@ export interface IDragResizeProps {
   height?: number;
   rotate?: number;
 
-  /** 立即更新：由外部属性改变来更新视图，性能差一些 */
-  immediate?: boolean;
-
   /** 容器缩放X */
   parentScaleX?: number;
 
