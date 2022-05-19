@@ -4,11 +4,6 @@ import VueDragResize from './index';
 </script>
 <template>
   <div class="container">
-    <section>
-      <VueDragResize />
-    </section>
-    <section>
-      <VueDragResize />
-    </section>
+    <VueDragResize />
   </div>
 </template>
