@@ -2,5 +2,5 @@
 
 </script>
 <template>
-  <div>1</div>
+  <div>测试组件</div>
 </template>
