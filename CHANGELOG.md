@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/huogui/vue3-drag-resize/compare/v0.0.2...v0.0.3) (2022-05-19)
+
+
+### Features
+
+* 测试action ([a72fcac](https://github.com/huogui/vue3-drag-resize/commit/a72fcace4cffdc6c66f7dfa4a4c87978512e6347))
+
 ### [0.0.2](https://github.com/huogui/vue3-drag-resize/compare/v0.0.1...v0.0.2) (2022-05-19)
 
 

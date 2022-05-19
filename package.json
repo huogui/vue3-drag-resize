@@ -1,6 +1,6 @@
 {
   "name": "vue3-drag-resize",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vue-tsc --noEmit && vite build",
