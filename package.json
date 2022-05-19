@@ -7,7 +7,8 @@
     "prepare": "husky install",
     "eslint": "eslint src --ext .ts,.js,.vue --fix",
     "stylelint": "stylelint src/**/*.{vue,css,less,scss} --fix",
-    "lint": "npm run eslint && npm run stylelint"
+    "lint": "npm run eslint && npm run stylelint",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
@@ -20,6 +21,7 @@
     "postcss-html": "^1.4.1",
     "postcss-less": "^6.0.0",
     "postcss-scss": "^4.0.4",
+    "standard-version": "^9.5.0",
     "stylelint": "^14.8.2",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^25.0.0",
