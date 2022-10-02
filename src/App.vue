@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { reactive } from 'vue';
-import VueDragResize, { IRect } from './index';
+import { reactive } from 'vue'
+import type { IRect } from './index'
+import VueDragResize from './index'
 const vdr = reactive([
   {
     x: 0,
@@ -35,45 +36,45 @@ const vdr = reactive([
     rotate: 0,
     content: 'draggable resizable',
   },
-]);
+])
 
 function onDragEnd(ev: IRect, index: number) {
-  vdr[index].x = ev.x;
-  vdr[index].y = ev.y;
+  vdr[index].x = ev.x
+  vdr[index].y = ev.y
 }
 
 function onResizeEnd(ev: IRect, index: number) {
-  vdr[index].width = ev.width;
-  vdr[index].height = ev.height;
-  vdr[index].x = ev.x;
-  vdr[index].y = ev.y;
+  vdr[index].width = ev.width
+  vdr[index].height = ev.height
+  vdr[index].x = ev.x
+  vdr[index].y = ev.y
 }
 
 function onResizing(ev: IRect, index: number) {
-  vdr[index].width = ev.width;
-  vdr[index].height = ev.height;
-  vdr[index].x = ev.x;
-  vdr[index].y = ev.y;
+  vdr[index].width = ev.width
+  vdr[index].height = ev.height
+  vdr[index].x = ev.x
+  vdr[index].y = ev.y
 }
 
 function onDragging(ev: IRect, index: number) {
-  vdr[index].width = ev.width;
-  vdr[index].height = ev.height;
-  vdr[index].x = ev.x;
-  vdr[index].y = ev.y;
+  vdr[index].width = ev.width
+  vdr[index].height = ev.height
+  vdr[index].x = ev.x
+  vdr[index].y = ev.y
 }
 
 function onActive(index: number) {
   vdr.forEach((v, i) => {
-    v.active = i === index;
-  });
+    v.active = i === index
+  })
 }
 // 旋转
 function onRotating(ev: number, index: number) {
-  vdr[index].rotate = ev;
+  vdr[index].rotate = ev
 }
 function onRotateEnd(ev: number, index: number) {
-  vdr[index].rotate = ev;
+  vdr[index].rotate = ev
 }
 </script>
 
